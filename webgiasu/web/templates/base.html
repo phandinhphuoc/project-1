@@ -1,0 +1,471 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>{% block title %}Toán trực quan{% endblock %}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/core-img/abc.ico' %}">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <!-- Breaking News Widget -->
+                        <div class="breaking-news-area d-flex align-items-center">
+                            <div class="news-title">
+                                <p>Tin tức:</p>
+                            </div>
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="single-post.html">Thông tin tuyển sinh 2022</a></li>
+                                    <li><a href="single-post.html">Tỉ lệ tốt nghiệp 2022</a></li>
+                                    <li><a href="single-post.html">Các lớp chuẩn bị khai giảng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="top-meta-data d-flex align-items-center justify-content-end">
+                            <!-- Top Social Info -->
+                            <div class="top-social-info">
+                                <a href="https://www.facebook.com/toantrucquan" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.tiktok.com/@toantrucquan" target="_blank"><i class='fa fa-tiktok'></i></a>
+                                <a href="https://www.youtube.com/channel/UCBZuokU5poSdTR7Z8iCNm3g" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                            <!-- Top Search Area -->
+                            <div class="top-search-area">
+                                <form action="index.html" method="post">
+                                    <input type="search" name="top-search" id="topSearch" placeholder="Tìm kiếm...">
+                                    <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
+                            </div>
+                            <!-- Login -->
+                            <a href="login.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="vizew-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="vizewNav">
+
+                        <!-- Nav brand -->
+                        <a href="{% url 'home' %}" class="nav-brand"><img src="{% static 'img/core-img/phuoc.png' %}" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li class="active"><a href="{% url 'home' %}">TRANG CHỦ</a></li>
+                                     <li><a href="{% url 'toan10' %}">Toán 10</a></li>
+                                    <li><a href="{% url 'toan11' %}">Toán 11</a></li>
+                                    <li><a href="{% url 'toan12' %}">Toán 12</a></li>
+                                    <li><a href="{% url 'onthithpt' %}">Ôn thi THPT</a></li>
+                                    <li><a href="{% url 'tailieu' %}">Tài liệu</a></li>
+                                    <li><a href="#">Chuyên đề</a>
+                                        <div class="megamenu">
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="{% url 'empty' %}">- Đại số 10</a></li>
+                                                <li><a href="{% url 'empty' %}">- Hình học 10</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="{% url 'empty' %}">- Đại số & Giải tích 11</a></li>
+                                                <li><a href="{% url 'empty' %}">- Hình học 11</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="{% url 'chuyendegiaitich12' %}">- Giải tích 12</a></li>
+                                                <li><a href="{% url 'empty' %}">- Hình học 12</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="{% url 'empty' %}">- Ôn thi THPT 2023</a></li>
+                                                <li><a href="{% url 'empty' %}">- Ôn thi đánh giá năng lực 2023</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="{% url 'contact' %}">Đăng ký</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+{% block content %}
+    
+{% endblock %}
+<div class="col-12 col-md-6 col-lg-4">
+    <div class="sidebar-area">
+
+        <!-- ***** Single Widget ***** -->
+        <div class="single-widget followers-widget mb-50">
+
+        </div>
+
+        <!-- ***** Single Widget ***** -->
+        <div class="single-widget latest-video-widget mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading style-2 mb-30">
+
+            </div>
+
+            <!-- Single Blog Post -->
+            <div class="single-post-area mb-30">
+                <!-- Post Thumbnail -->
+
+            </div>
+
+            <!-- Single Blog Post -->
+            <div class="single-blog-post d-flex">
+
+            </div>
+
+            <!-- Single Blog Post -->
+            <div class="single-blog-post d-flex">
+
+            </div>
+
+            <!-- Single Blog Post -->
+            <div class="single-blog-post d-flex">
+
+            </div>
+        </div>
+
+        <!-- ***** Single Widget ***** -->
+        <div class="single-widget add-widget mb-50">
+
+        </div>
+
+        <!-- ***** Sidebar Widget ***** -->
+        <div class="single-widget youtube-channel-widget mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading style-2 mb-30">
+
+            </div>
+
+            <!-- Single YouTube Channel -->
+            <div class="single-youtube-channel d-flex align-items-center">
+                <div class="youtube-channel-thumbnail">
+
+                </div>
+                <div class="youtube-channel-content">
+
+                </div>
+            </div>
+
+            <!-- Single YouTube Channel -->
+            <div class="single-youtube-channel d-flex align-items-center">
+                <div class="youtube-channel-thumbnail">
+                </div>
+                <div class="youtube-channel-content">
+
+                </div>
+            </div>
+
+            <!-- Single YouTube Channel -->
+            <div class="single-youtube-channel d-flex align-items-center">
+                <div class="youtube-channel-thumbnail">
+
+                </div>
+                <div class="youtube-channel-content">
+
+                </div>
+            </div>
+
+            <!-- Single YouTube Channel -->
+            <div class="single-youtube-channel d-flex align-items-center">
+                <div class="youtube-channel-thumbnail">
+
+                </div>
+                <div class="youtube-channel-content">
+
+                </div>
+            </div>
+
+            <!-- Single YouTube Channel -->
+            <div class="single-youtube-channel d-flex align-items-center">
+                <div class="youtube-channel-thumbnail">
+
+                </div>
+                <div class="youtube-channel-content">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Single Widget ***** -->
+        <div class="single-widget newsletter-widget mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading style-2 mb-30">
+
+            </div>
+            <!-- Newsletter Form -->
+            <div class="newsletter-form">
+
+            </div>
+        </div>
+
+        <!-- ***** Single Widget ***** -->
+        <div class="single-widget">
+            <!-- Section Heading -->
+            <div class="section-heading style-2 mb-30">
+
+            </div>
+
+            <!-- Single Blog Post -->
+            <div class="single-blog-post d-flex">
+
+                <div class="post-content">
+                    <div class="post-meta d-flex justify-content-between">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Blog Post -->
+            <div class="single-blog-post d-flex">
+                <div class="post-thumbnail">
+                </div>
+                <div class="post-content">
+                </div>
+            </div>
+
+            <!-- Single Blog Post -->
+            <div class="single-blog-post d-flex">
+                <div class="post-thumbnail">
+                </div>
+                <div class="post-content">
+                </div>
+            </div>
+
+            <!-- Single Blog Post -->
+            <div class="single-blog-post d-flex">
+                <div class="post-thumbnail">
+
+                </div>
+                <div class="post-content">
+                </div>
+            </div>
+
+            <!-- Single Blog Post -->
+            <div class="single-blog-post d-flex">
+                <div class="post-thumbnail">
+
+                </div>
+                <div class="post-content">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="footer-widget mb-70">
+                        <!-- Logo -->
+                        <a href="{% url 'home' %}" class="foo-logo d-block mb-4"><img src="{% static 'img/core-img/phuoc.png' %}" alt=""></a>
+                        <!-- Footer Newsletter Area -->
+                        <div class="footer-nl-area">
+                            <form action="#" method="post">
+                                <input type="email" name="nl-email" class="form-control" id="nlEmail" placeholder="Nhập Email để được tư vấn">
+                                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="footer-widget mb-70">
+                        <h6 class="widget-title">Đánh giá của học sinh</h6>
+                        <!-- Twitter Slides -->
+                        <div class="twitter-slides owl-carousel">
+
+                            <!-- Single Twitter Slide -->
+                            <div class="single--twitter-slide">
+                                <!-- Single Twit -->
+                                <div class="single-twit">
+                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                </div>
+                                <!-- Single Twit -->
+                                <div class="single-twit">
+                                    <p><i class="fa fa-twitter"></i> <span>@Leonard</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                </div>
+                            </div>
+
+                            <!-- Single Twitter Slide -->
+                            <div class="single--twitter-slide">
+                                <!-- Single Twit -->
+                                <div class="single-twit">
+                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                </div>
+                                <!-- Single Twit -->
+                                <div class="single-twit">
+                                    <p><i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so happy because I found this magazine, and it just made Vizeweasier. Thanks for sharing</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="footer-widget mb-70">
+                        <h6 class="widget-title">Sport Videos</h6>
+
+                        <!-- Single Blog Post -->
+                        <div class="single-blog-post d-flex">
+                            <div class="post-thumbnail">
+                                <img src="{% static 'img/bg-img/1.jpg' %}" alt="">
+                            </div>
+                            <div class="post-content">
+                                <a href="single-post.html" class="post-title">DC Shoes: gymkhana the</a>
+                                <div class="post-meta d-flex justify-content-between">
+                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
+                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
+                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Blog Post -->
+                        <div class="single-blog-post d-flex">
+                            <div class="post-thumbnail">
+                                <img src="{% static 'img/bg-img/2.jpg' %}" alt="">
+                            </div>
+                            <div class="post-content">
+                                <a href="single-post.html" class="post-title">Sweet Yummy Chocolatea Tea</a>
+                                <div class="post-meta d-flex justify-content-between">
+                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
+                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
+                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="footer-widget mb-70">
+                        <h6 class="widget-title">Địa chỉ</h6>
+                        <!-- Contact Address -->
+                        <div class="contact-address">
+                            <p>Ấp 3, An Phước, Long Thành, <br>Đồng Nai</p>
+                            <p>Phone: 0817.245.456</p>
+                            <p>Email: toantrucquan@gmail.com</p>
+                        </div>
+                        <!-- Footer Social Area -->
+                        <div class="footer-social-area">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="copywrite-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-sm-6">
+                        <p class="copywrite-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Bản quyền &copy;<script>document.write(new Date().getFullYear());</script> Đã đăng ký | Được viết <i class="fa fa-heart-o" aria-hidden="true"></i> bởi <a href="https://colorlib.com" target="_blank">Phan Đình Phước</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="#">Tải liệu</a></li>
+                                <li><a href="#">Về chúng tôi</a></li>
+                                <li><a href="{% url 'contact' %}">Liên hệ</a></li>
+                                <li><a href="#">Tải bài giảng</a></li>
+                                <li><a href="#">Tải file Powperpoint</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+</html>

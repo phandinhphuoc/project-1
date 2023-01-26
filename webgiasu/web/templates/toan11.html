@@ -1,0 +1,250 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <div class="vizew-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="#">Toán 11</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Typography Area Start ##### -->
+    <div class="vizew-typography-area mb-80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <!-- Typography Content -->
+                    <div class="typography-content mb-50">
+                        <!-- Title -->
+                        <div class="section-heading">
+                            <h4>ĐẠI SỐ VÀ GIẢI TÍCH 11</h4>
+                            <div class="line"></div>
+                        </div>
+                            <h6>CHƯƠNG I: Hàm số lượng giác và phương trình lượng giác</h6>
+                            <ul class="course-list">
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 1: Hàm số lượng giác</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 2: Phương trình lượng giác cơ bản</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 3: Một số phương trình lượng giác thường gặp</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                            </ul>
+                                <h6>CHƯƠNG II: TỔ HỢP - XÁC SUẤT</h6>
+                            <ul class="course-list">
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 1: Quy tắc đếm</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 2: Hoán vị - Chỉnh hợp - Tổ hợp</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 3: Nhị thức Niu-tơn</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 4: Phép thử và biến cố</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 5: Xác suất của biến cố</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                            </ul>
+                                <h6>CHƯƠNG III: DÃY SỐ - CẤP SỐ CỘNG VÀ CẤP SỐ NHÂN</h6>
+                            <ul class="course-list">
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 1: Phương pháp quy nạp toán học</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 2: Dãy số</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 3: Cấp số cộng</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 4: Cấp số nhân</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                            </ul>
+                            <h6>CHƯƠNG IV: GIỚI HẠN</h6>
+                            <ul class="course-list">
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 1: Giới hạn của dãy số</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 2: Giới hạn của hàm số</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 3: Hàm số liên tục</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                            </ul>
+                            <h6>CHƯƠNG V: ĐẠO HÀM</h6>
+                            <ul class="course-list">
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 1: Định nghĩa và ý nghĩa của đạo hàm</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 2: Quy tắc tính đạo hàm</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 3: Đạo hàm của hàm số lượng giác</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 4: Vi phân</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 5: Đạo hàm cấp hai</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                            </ul>
+                            <div class="section-heading">
+                                <h4>HÌNH HỌC 11</h4>
+                                <div class="line"></div>
+                            </div>
+                                <h6>CHƯƠNG I: PHÉP DỜI HÌNH VÀ PHÉP ĐỒNG DẠNG TRONG MẶT PHẲNG</h6>
+                                <ul class="course-list">
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 1: Phép biến hình</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 2: Phép tịnh tiến</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 3: Phép đối xứng trục</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 4: Phép đối xứng tâm</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 6: Khái niệm về phép dời hình và hai hình bằng nhau</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 7: Phép vị tự</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 7: Phép vị tự</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 8:Phép đồng dạng</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                </ul>
+                                    <h6>CHƯƠNG II: ĐƯỜNG THẲNG VÀ MẶT PHẲNG TRONG KHÔNG GIAN. QUAN HỆ SONG SONG</h6>
+                                <ul class="course-list">
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 1: Đại cương về đường thẳng và mặt phẳng</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 2: Hai đường thẳng chéo nhau và hai đường thẳng song song</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 3: Đường thẳng và mặt phẳng song song</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 4: Hai mặt phẳng song song</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 5: Phép chiếu song song. Hình biểu diễn của một hình không gian</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                </ul>
+                                    <h6>CHƯƠNG III: VECTƠ TRONG KHÔNG GIAN. QUAN HỆ VUÔNG GÓC TRONG KHÔNG GIAN</h6>
+                                <ul class="course-list">
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 1: Vectơ trong không gian</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 2: Hai đường thẳng vuông góc</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 3: Đường thẳng vuông góc với mặt phẳng</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 4: Hai mặt phẳng vuông góc</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 5: Khoảng cách</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                </ul>
+                        </div>
+
+                    <!-- Typography Content -->
+                    <div class="typography-content mb-50">
+                        <!-- Title -->
+                        <h4 class="mb-3">ĐĂNG KÝ ĐỂ NHẬN ĐƯỢC CÁC BÀI GIẢNG MỚI NHẤT</h4>
+
+                        <!-- Contact Form Area -->
+                        <div class="contact-form-area">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" placeholder="Địa chỉ Email hoặc số điện thoại">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Thông tin bổ sung"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn vizew-btn mt-30" type="submit">Đăng ký</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    <!-- ##### Typography Area End ##### -->
+{% endblock %}

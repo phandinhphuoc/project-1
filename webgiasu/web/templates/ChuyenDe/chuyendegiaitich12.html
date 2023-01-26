@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <div class="vizew-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="#">Toán 12</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Typography Area Start ##### -->
+    <div class="vizew-typography-area mb-80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <!-- Typography Content -->
+                    <div class="typography-content mb-50">
+                        <!-- Title -->
+                        <div class="section-heading">
+                            <h4>CHUYÊN ĐỀ ÔN THI TOÁN 12</h4>
+                            <div class="line"></div>
+                        </div>
+                            <h6>I. ỨNG DỤNG CỦA ĐẠO HÀM ĐỂ KHẢO SÁT VÀ VẼ ĐỒ THỊ HÀM SỐ</h6>
+                            <ul class="course-list">
+                                <li class="justify-content-between d-flex">
+                                    <p>Chủ đề 1: Sự đồng biến, nghịch biến của hàm số</p>
+                                    <a class="post-cata" href="{% url 'baigiang' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Chủ đề 2: Cực trị của hàm số</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Chủ đề 3: Giá trị lớn nhất, giá trị nhỏ nhất</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Chủ đề 4: Đường tiệm cận</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Chủ đề 5: Đồ thị hàm số bậc ba</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Chủ đề 6: Đồ thị hàm số trùng phương</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Chủ đề 7: Đồ thị hàm số hữu tỉ</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Chủ đề 8: Tiếp tuyến của đồ thị</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Chủ đề 9: Tổng hợp đề thi THPT Quốc gia các năm</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    <!-- Typography Content -->
+                    <div class="typography-content mb-50">
+                        <!-- Title -->
+                        <h4 class="mb-3">ĐĂNG KÝ ĐỂ NHẬN ĐƯỢC CÁC BÀI GIẢNG MỚI NHẤT</h4>
+
+                        <!-- Contact Form Area -->
+                        <div class="contact-form-area">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" placeholder="Địa chỉ Email hoặc số điện thoại">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Thông tin bổ sung"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn vizew-btn mt-30" type="submit">Đăng ký</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    <!-- ##### Typography Area End ##### -->
+{% endblock %}

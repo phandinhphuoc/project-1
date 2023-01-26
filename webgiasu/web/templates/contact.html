@@ -1,0 +1,85 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block title %}Đăng ký học tại toán trực quan{% endblock %}
+{% block content2 %}
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <div class="vizew-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Đăng ký</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area mb-80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-7 col-lg-8">
+                    <!-- Section Heading -->
+                    <div class="section-heading style-2">
+                        <h4>Đăng ký ngay để được tư vấn</h4>
+                        <div class="line"></div>
+                    </div>
+
+                    <p>Chúng tôi xin cam kết chất lượng và bảo đảm đạt đúng nguyện vọng của phụ huynh và học sinh khi được học tại trung tâm. Cam kết đạt 8+ cho học sinh trong các kỳ thi.</p>
+
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area mt-50">
+                        <form method="GET" action="https://script.google.com/macros/s/AKfycbzm0orplPaNRMv16UWULFmHybyvmCGddYis6A6_U9Ngr-X1ej1Z4TwIt6ozFf63oHmMpw/exec">
+                            <div class="form-group">
+                                <label for="name">Họ và tên*</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Số điện thoại hoặc địa chỉ email*</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Thông tin*</label>
+                                <textarea name="message" class="form-control" id="message" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="btn vizew-btn mt-30" type="submit">Đăng ký ngay</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5 col-lg-4">
+                    <div class="sidebar-area">
+                        <!-- ***** Single Widget ***** -->
+                        <div class="single-widget newsletter-widget mb-50">
+                            <!-- Section Heading -->
+                            <div class="section-heading style-2 mb-30">
+                                <h4>Newsletter</h4>
+                                <div class="line"></div>
+                            </div>
+                            <p>Subscribe our newsletter gor get notification about new updates, information discount, etc.</p>
+                            <!-- Newsletter Form -->
+                            <div class="newsletter-form">
+                                <form action="#" method="post">
+                                    <input type="email" name="nl-email" class="form-control mb-15" id="emailnl" placeholder="Enter your email">
+                                    <button type="submit" class="btn vizew-btn w-100">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- ***** Single Widget ***** -->
+                        <div class="single-widget add-widget">
+                            <a href="#"><img src="{% static 'img/bg-img/add.png' %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
+{% endblock %}
+

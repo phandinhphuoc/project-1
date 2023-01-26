@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <div class="vizew-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="#">Toán 10</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Typography Area Start ##### -->
+    <div class="vizew-typography-area mb-80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <!-- Typography Content -->
+                    <div class="typography-content mb-50">
+                        <!-- Title -->
+                        <div class="section-heading">
+                            <h4>ĐẠI SỐ 10</h4>
+                            <div class="line"></div>
+                        </div>
+                            <h6>CHƯƠNG I: MỆNH ĐỀ VÀ TÂP HỢP</h6>
+                            <ul class="course-list">
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 1: Mệnh đề</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 2: Tập hợp</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 3: Các phép toán tập hợp</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                            </ul>
+                                <h6>CHƯƠNG II: BẤT PHƯƠNG TRÌNH VÀ HỆ BẤT PHƯƠNG TRÌNH BẬC NHẤT HAI ẨN</h6>
+                            <ul class="course-list">
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 1: Bất phương trình bậc nhất hai ẩn</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 2: Hệ bất phương trình bậc nhất hai ẩn</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                            </ul>
+                                <h6>CHƯƠNG III: HÀM SỐ BẬC HAI VÀ ĐỒ THỊ</h6>
+                            <ul class="course-list">
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 1: Hàm số và đồ thị</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Bài 2: Hàm số bậc hai</p>
+                                    <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                </li>
+                            </ul>
+                            <div class="section-heading">
+                                <h4>HÌNH HỌC 10</h4>
+                                <div class="line"></div>
+                            </div>
+                                <h6>CHƯƠNG I: HỆ THỨC LƯỢNG TRONG TAM GIÁC</h6>
+                                <ul class="course-list">
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 1: Giá trị lượng giác của một góc từ \({0}^{o}\) đến \({180}^{o}\)</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 2: Định lí côsin và định lí sin</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 3: Giải tam giác và ứng dụng thực tế</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                </ul>
+                                    <h6>CHƯƠNG II: VECTƠ</h6>
+                                <ul class="course-list">
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 1: Khái niệm vectơ</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 2: Tổng và hiệu của hai vectơ</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 3: Tích của một số với một vectơ</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Bài 4: Tích vô hướng của hai vectơ</p>
+                                        <a class="post-cata" href="{% url 'empty' %}">Vào học</a>
+                                    </li>
+                                </ul>
+                        </div>
+
+                    <!-- Typography Content -->
+                    <div class="typography-content mb-50">
+                        <!-- Title -->
+                        <h4 class="mb-3">ĐĂNG KÝ ĐỂ NHẬN ĐƯỢC CÁC BÀI GIẢNG MỚI NHẤT</h4>
+
+                        <!-- Contact Form Area -->
+                        <div class="contact-form-area">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" placeholder="Địa chỉ Email hoặc số điện thoại">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Thông tin bổ sung"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn vizew-btn mt-30" type="submit">Đăng ký</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    <!-- ##### Typography Area End ##### -->
+{% endblock %}
